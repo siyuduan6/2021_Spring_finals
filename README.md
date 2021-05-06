@@ -104,8 +104,115 @@ After data cleaning, we did descriptive statistics:
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Descriptive%20Statistics.png">
 </p> 
 
+### GV Level
+
+Due to high skewness, the gv rate were divided into Level 0 - 7 according to [ <, median-3*std, median-2*std, median-std, median, median+std, median+2*std, median +3*std, >].
+After splitting, each level contains the number of samples:
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/gv_level.png">
+</p> 
 
 ## Simple Data Analyst
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/eee4e920340d9ec67daeb23b6cb4a04484858017/Graphs/%E4%B8%8B%E8%BD%BD.png">
 </p> 
+
+## Correlation 
+
+We constructed correlation metrix and pairwise metrix to display the correlationship of variables.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Correlation.png">
+</p> 
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/pairplot.png">
+</p> 
+
+## Hypothesis Test
+
+### Hypothsis 1
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/unem_bar.png">
+</p> 
+
+As we can observe, as the zip code area has a higher unemployment rate, the rate of gun violence increases. By calculating the correlation coefficient of unemployment rate and GV level, which is 0.292, we can accept hypothesis 1, even though the relationship is not strong.
+
+### Hypothsis 2
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Poverty_bar.png">
+</p> 
+
+As we can observe, as the zip code area has a higher poverty rate, the rate of gun violence increases. By calculating the correlation coefficient of poverty rate and GV level, which is 0.442, we can accept hypothesis 2.
+
+### Hypothsis 3
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/bache_bar.png">
+</p> 
+
+As we can observe, as the zip code area has a higher education level, the rate of gun violence does decrease. By calculating the correlation coefficient of education level (Bachelor’s or higher) and GV level, which is -0.384, we can accept hypothesis 3.
+
+## Linear Regression
+
+We also used variables to build a linear regression model. The summary of multi-linear regression shows the variables are significantly related ( p < 0.05), and the model has relatively higher goodness of fit. (R^2)
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/LR.png">
+</p> 
+
+## Predictive Analysis
+
+### Predictive Models
+
+We also applied logistic regression, Ridge, and other classifier models to do some predictions based on the level of gun violence. 
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Predictive.png">
+</p> 
+
+### Model Training and Result of Prediction
+
+Firsty, we tried linear regression (baseline) and its penalty model and calculated the accuracy score. But the results (accuracy is only about 0.3) show they are not suitable for prediction.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/LR%20pre.png">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Ridge.png">
+</p> 
+
+Then we tried other classification methods and introduced sex ratio (The percentage of male in the population 16 years old or over) and age ratio (the percentage of the population 16 years old or over) into models.
+
+But so far the accuracy score can only reach 0.46 at most. Due to the scores, these models we tried are not good enough to help us predict the gun violence level in specific regions. In further analysis, we will continue to experiment and optimize our model. We picked four kinds of models with relatively high performance below.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/SVC.png">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/DF.png">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/RF.png">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/KNN.png">
+</p> 
+
+## Further Analysis
+
+Although all the hypotheses we made were accepted, the correlation in all three variables are not that strong. Thus, we were thinking to find others variables that may have a higher correlation to the gun violence rate. 
+
+We found the correlation between the unemployment rate and poverty has a much higher coefficient to 0.6213, and the correlation coefficient between poverty and education level is 0.5668. Next step is to deal with multicollinearity.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/multicol.png">
+</p> 
+
+
