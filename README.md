@@ -50,7 +50,7 @@ Cleaned irregular zip code like 27410(Too many cases, that zip code represent em
 
 For variables:
 
-According to definations, we merged population, unemployment rate, poverty rate, and percentage of people with high school degree or higher and percentage of people with Bachelor's degree or higher with Gun Violence dataset together. Then we checked missing values of these variables and there are two types: NaN and "-". 
+According to definations, we merged population, unemployment rate, poverty rate, and percentage of people with high school degree or higher and percentage of people with Bachelor's degree or higher with Gun Violence dataset together. Then we checked missing values of these variables and there are two types: NaN(Inf) and "-". 
 
 Before cleaning, there are 9847 rows.
 
