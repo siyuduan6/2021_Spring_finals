@@ -22,6 +22,39 @@ Hypothesis 3: There is a negative correlation between the number of gun cases an
 
 Due to the imbalance population distribution between different cities, we decided to do our analysis on the zip-code level.
 
+## Background:
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/state_year.png">
+</p> 
+
+From the above graph, we can observe that gun violence cases have increased every year since 2014. In 2014, the number of cases has reached 50k then reached 55k in 2016 and finally reached 60k in 2017. Gun violence increased 20% in 3 years.
+
+<p align="canter">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/state_2014.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/state__2015.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/state_2016.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/state_2017.png"width="400" height="400" />
+  
+</p> 
+Three States have most gun violence incidents between 2013-2018 are California, Florida, and Illinois. For almost every year between 2013 to 2018, California and Illinois would always on the top 3 list. As long as California and Illinois have many incident cases, it doesn’t mean they are the most dangerous states. 
+
+<p align="canter">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/month_2015.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/month_2016.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/month_2017.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/e8e8f3e344e074765dc714e8091805c8046635ab/Graphs/july%204th.png"width="400" height="400" />
+  
+</p> 
+From the three above graph, we can observe the higher peak around July in all three years. This is interesting as July 4th is celebrated as the independent day in the United States of America.will pull out the records from July 4th to see if the peak records on that month was infected by the independent day. And I also expecting a peak occurred in November 2016,  because election day was on November 8th, 2016. By look at the count of the incident for year 2015,2016,2017. The day on July 4th always on the top 3 list of the number of cases in years. on Novermber8th,2016.The number of incidents was't as high as I expected, So guesses was failed.
+
+
+## Workflow
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/84a41491ce3b09d88be9882cd98a265ecfef579a/Graphs/workflow.png">
+</p> 
+This is the workflow for our project
+
+
 ## Zip Code Crawling
 
 For getting the relative zip code to specific address, we requested geolocation data from google API. And we got 61400 zip codes for clustering in analysis.
