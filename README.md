@@ -16,8 +16,7 @@ Poverty - https://data.census.gov/cedsci/table?t=Income%20and%20Poverty&g=010000
 ## Hypothesis
 Hypothesis 1: There is a positive correlation between the number of gun cases and unemployment rate. 
 
-Hypothesis 2: The is a
-positive correlation between the number of gun violence cases and poverty status.
+Hypothesis 2: There is a positive correlation between the number of gun violence cases and poverty status.
 
 Hypothesis 3: There is a negative correlation between the number of gun cases and the educational level.
 
@@ -187,7 +186,7 @@ Firsty, we tried linear regression (baseline) and its penalty model and calculat
 
 Then we tried other classification methods and introduced sex ratio (The percentage of male in the population 16 years old or over) and age ratio (the percentage of the population 16 years old or over) into models.
 
-But so far the accuracy score can only reach 0.46 at most. Due to the scores, these models we tried are not good enough to help us predict the gun violence level in specific regions. In further analysis, we will continue to experiment and optimize our model. We picked four kinds of models with relatively high performance below.
+But so far the accuracy score can only reach 0.46 at most. Due to the scores, these models we tried are not good enough to help us predict the gun violence level in specific regions. In further analysis, we will continue to experiment and optimize our model. We picked five kinds of models with relatively high performance below (SVC, Decision Tree, Random Forest. KNN, Bayes).
 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/SVC.png">
