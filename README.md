@@ -23,6 +23,16 @@ Hypothesis 3: There is a negative correlation between the number of gun cases an
 
 Due to the imbalance population distribution between different cities, we decided to do our analysis on the zip-code level.
 
+## Zip Code Crawling
+
+For getting the relative zip code to specific address, we requested geolocation data from google API.
+
+And we got 61400 zip codes for clustering in analysis.
+
+## Variable Definitions
+<p align="center">
+  <img src=Graphs/Variable definations.png>
+</p> 
 
 ## Simple Data Analyst
 <p align="center">
