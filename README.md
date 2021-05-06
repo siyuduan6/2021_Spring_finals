@@ -2,7 +2,14 @@
 
 # The Relationships of Gun Violence, Educational Attainment, Poverty Status And Unemployment Rate in US
 ## Introduction
+<p align="canter">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/f11609bc585bf799aad1653e0ebf93abf8a100b8/Graphs/intro1.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/f11609bc585bf799aad1653e0ebf93abf8a100b8/Graphs/intro2.png"width="400" height="400" />
+ 
+  
+</p> 
 Gun violence represents a major threat to the health and safety of all Americans. According to the simple analysis from the gun violence data, the number of gun violence cases has steadily increased by more than 4 years. The argument about banning guns was always a controversial topic in the United States. Some people might say the gun should not be banned because every gun shooting should blame the person who uses the gun, not the gun itself. So we were thinking if there any correlation between the gun violence rate and the education level, poverty status, and unemployment.
+
 ## Team Members
 Siyu Duan - siyud6@illinois.edu</br>
 Baisheng Qiu - bqiu42@illinois.edu
@@ -39,13 +46,26 @@ From the above graph, we can observe that gun violence cases have increased ever
 Three States have most gun violence incidents between 2013-2018 are California, Florida, and Illinois. For almost every year between 2013 to 2018, California and Illinois would always on the top 3 list. As long as California and Illinois have many incident cases, it doesn’t mean they are the most dangerous states. 
 
 <p align="canter">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/52e0027baad5e73e4c69cf152250ff59b4427346/Graphs/char.png"width="400" height="400" />
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/52e0027baad5e73e4c69cf152250ff59b4427346/Graphs/n_killed.png"width="400" height="400" />
+ 
+</p> 
+Those incidents with high number of killed usually coming with high number of injureds.These cases are identified as mass shooting incidents
+Most of the participant were unharmed ,21% of particpants were arrested,25.3% of particpants were injured and 13% of participants were killed.
+
+
+
+
+## July 4th
+<p align="canter">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/month_2015.png"width="400" height="400" />
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/month_2016.png"width="400" height="400" />
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/6b468c7d596d75b9a5e4c6bff407b9f21601a087/Graphs/month_2017.png"width="400" height="400" />
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/e8e8f3e344e074765dc714e8091805c8046635ab/Graphs/july%204th.png"width="400" height="400" />
   
 </p> 
-From the three above graph, we can observe the higher peak around July in all three years. This is interesting as July 4th is celebrated as the independent day in the United States of America.will pull out the records from July 4th to see if the peak records on that month was infected by the independent day. And I also expecting a peak occurred in November 2016,  because election day was on November 8th, 2016. By look at the count of the incident for year 2015,2016,2017. The day on July 4th always on the top 3 list of the number of cases in years. on Novermber8th,2016.The number of incidents was't as high as I expected, So guesses was failed.
+From the three above graph, we can observe the higher peak around July in all three years. This is interesting as July 4th is celebrated as the independent day in the United States of America.will pull out the records from July 4th to see if the peak records on that month was infected by the independent day. And I also expecting a peak occurred in November 2016,  because election day was on November 8th, 2016. By look at the count of the incident for year 2015,2016,2017. The day on July 4th always on the top 3 list of the number of cases in years. on Novermber8th,2016.The number of incidents was't as high as I expected, So one of my guesses was failed.
+
 
 
 ## Workflow
