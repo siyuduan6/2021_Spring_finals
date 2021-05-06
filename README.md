@@ -31,7 +31,7 @@ And we got 61400 zip codes for clustering in analysis.
 
 ## Variable Definitions
 <p align="center">
-  <img src=Graphs/Variable definations.png>
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/271d939ff19ac538da76bbb589fedef57fd818b7/Graphs/Variable%20definations.png">
 </p> 
 
 ## Simple Data Analyst
