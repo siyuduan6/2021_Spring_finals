@@ -13,11 +13,11 @@ Education Attainment - https://data.census.gov/cedsci/table?t=Educational%20Atta
 Unemployment - https://data.census.gov/cedsci/table?t=Employment&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S0801
 Poverty - https://data.census.gov/cedsci/table?t=Income%20and%20Poverty&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1701
 
+## Hypothesis
+Hypothesis 1: There is a positive correlation between the number of gun cases and unemployment rate. 
 
-##Hypothesis 1: There is a positive correlation between the number of gun cases and unemployment rate. 
-
-##Hypothesis 2: The is a
+Hypothesis 2: The is a
 positive correlation between the number of gun violence cases and poverty status.
 
-##Hypothesis 3: There is a negative correlation between the number of gun cases and the educational level.
+Hypothesis 3: There is a negative correlation between the number of gun cases and the educational level.
 
