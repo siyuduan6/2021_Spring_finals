@@ -35,12 +35,22 @@ We chose GV rate for correlation analysis and GV level for predictive analysis. 
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/271d939ff19ac538da76bbb589fedef57fd818b7/Graphs/Variable%20definations.png">
 </p> 
 
-## Data Cleaning 
+## Data Cleaning and Descriptions
 ### Missing Value 
-Cleaned the null values and None values on the zipcode column.
+For zip codes:
+
+Cleaned the null values and None values on the zipcode column and the null values and empty field on the address column.
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/58f75c5ddccd6e862b22f3f08f18b5a2afcb054d/Graphs/Zip%20Code%20Clean%20(1).png">
+</p> 
+
 Cleaned irregular zip code like 27410(Too many cases, that zip code represent empty address).
-Cleaned the null values and empty field on the address column.
-![image](https://user-images.githubusercontent.com/74063021/117252012-05cb1280-ae0b-11eb-82ba-ca679c37fd9e.png)
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/58f75c5ddccd6e862b22f3f08f18b5a2afcb054d/Graphs/Zip%20Code%20Clean%20(2).png">
+</p> 
+
+For variables:
+
 
 
 ## Simple Data Analyst
