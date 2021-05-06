@@ -21,3 +21,7 @@ positive correlation between the number of gun violence cases and poverty status
 
 Hypothesis 3: There is a negative correlation between the number of gun cases and the educational level.
 
+Due to the imbalance population distribution between different cities, we decided to do our analysis on the zip-code level.
+
+
+## Simple Data Analyst
