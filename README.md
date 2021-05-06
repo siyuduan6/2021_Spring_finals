@@ -205,6 +205,10 @@ But so far the accuracy score can only reach 0.46 at most. Due to the scores, th
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/KNN.png">
 </p> 
 
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Bayes.png">
+</p> 
+
 ## Further Analysis
 
 Although all the hypotheses we made were accepted, the correlation in all three variables are not that strong. Thus, we were thinking to find others variables that may have a higher correlation to the gun violence rate. 
@@ -215,4 +219,5 @@ We found the correlation between the unemployment rate and poverty has a much hi
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/multicol.png">
 </p> 
 
+And for predictive model construction, we will continue to train other models and adjust parameters to optimize our models. Also we may consider use ElasticNet Regression from the Abhiram's advice. 
 
