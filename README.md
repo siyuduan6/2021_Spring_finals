@@ -25,11 +25,10 @@ Due to the imbalance population distribution between different cities, we decide
 
 ## Zip Code Crawling
 
-For getting the relative zip code to specific address, we requested geolocation data from google API.
-
-And we got 61400 zip codes for clustering in analysis.
+For getting the relative zip code to specific address, we requested geolocation data from google API. And we got 61400 zip codes for clustering in analysis.
 
 ## Variable Definitions
+
 We chose GV rate for correlation analysis and GV level for predictive analysis. GV level is based on the GV rate, and the splitting method will be mentioned later. And for eductional level, we examined two indexes with different definitions and tried to figure out which one can help improve the performance of our models. 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/271d939ff19ac538da76bbb589fedef57fd818b7/Graphs/Variable%20definations.png">
@@ -51,6 +50,59 @@ Cleaned irregular zip code like 27410(Too many cases, that zip code represent em
 
 For variables:
 
+According to definations, we merged population, unemployment rate, poverty rate, and percentage of people with high school degree or higher and percentage of people with Bachelor's degree or higher with Gun Violence dataset together. Then we checked missing values of these variables and there are two types: NaN and "-". 
+
+Before cleaning, there are 9847 rows.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Before%20cleaning.jpg">
+</p> 
+
+To view the missing value, we counted missing value with two types as we mentioned. 
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Missing%20value.jpg">
+</p> 
+
+And then we viewed the skewness of all variables:
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Poverty%20dis.png">
+</p> 
+
+The distribution of poverty rate shows the right skewness.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Unemployment%20dis.png">
+</p> 
+
+The distribution of unemployment rate shows the right skewness.
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/High%20school%20dis.png">
+</p> 
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Bachelor%20dis.png">
+</p> 
+
+The distribution of education level (High School or Higher) shows the left skewness and so as education level (Bachelor's or Higher).
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/rate%20dis.png">
+</p> 
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Rate%20log%20dis.png">
+</p> 
+
+We found the all the variables are skewed, especially GV rate, so we used Log transformation to handle the skewness of GV rate.
+
+Since they are all numerical variables and highly skewed with only a very small number of missing values, we decided to fill the missing values by their median.
+
+After data cleaning, we did descriptive statistics:
+
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Descriptive%20Statistics.png">
+</p> 
 
 
 ## Simple Data Analyst
