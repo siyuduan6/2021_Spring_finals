@@ -30,9 +30,18 @@ For getting the relative zip code to specific address, we requested geolocation 
 And we got 61400 zip codes for clustering in analysis.
 
 ## Variable Definitions
+We chose GV rate for correlation analysis and GV level for predictive analysis. GV level is based on the GV rate, and the splitting method will be mentioned later. And for eductional level, we examined two indexes with different definitions and tried to figure out which one can help improve the performance of our models. 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/271d939ff19ac538da76bbb589fedef57fd818b7/Graphs/Variable%20definations.png">
 </p> 
+
+## Data Cleaning 
+### Missing Value 
+Cleaned the null values and None values on the zipcode column.
+Cleaned irregular zip code like 27410(Too many cases, that zip code represent empty address).
+Cleaned the null values and empty field on the address column.
+![image](https://user-images.githubusercontent.com/74063021/117252012-05cb1280-ae0b-11eb-82ba-ca679c37fd9e.png)
+
 
 ## Simple Data Analyst
 <p align="center">
