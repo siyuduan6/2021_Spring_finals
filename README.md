@@ -148,10 +148,15 @@ The distribution of education level (High School or Higher) shows the left skewn
 
 We found the all the variables are skewed, especially GV rate, so we used Log transformation to handle the skewness of GV rate.
 
-Since they are all numerical variables and highly skewed with only a very small number of missing values, we decided to fill the missing values by their median.
+Since they are all numerical variables and highly skewed with only a very small number of missing values, we decided to clean the missing values.
 
-After data cleaning, we did descriptive statistics:
+After data cleaning, there are 9819 samples:
 
+<p align="center">
+  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/After%20cleaning.jpg">
+</p> 
+
+We did descriptive statistics:
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Descriptive%20Statistics.png">
 </p> 
@@ -163,11 +168,6 @@ After splitting, each level contains the number of samples:
 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/gv_level.png">
-</p> 
-
-## Simple Data Analyst
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/eee4e920340d9ec67daeb23b6cb4a04484858017/Graphs/%E4%B8%8B%E8%BD%BD.png">
 </p> 
 
 ## Correlation 
