@@ -5,7 +5,13 @@ import json
 from aiohttp_requests import requests
 
 async def main():
-    """exist = pd.read_csv("attempt1.txt", header=None).rename(columns={0: "zip"})
+    """
+    Get zip code from google API
+    :return:
+    """
+    # If laptop crashes or crawling is paused by accident, paste the output to "attempt.csv" file
+    # and use codes below to restart.
+    """exist = pd.read_csv("attempt.txt", header=None).rename(columns={0: "zip"})
     gv = pd.read_csv("stage3.csv")
     gv["Full_Address"] = gv["address"] + gv["city_or_county"] + gv["state"]
     gv_il = gv[gv["date"].str.match(r"^2017.*") == True].reset_index()
