@@ -1,9 +1,9 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.linear_model import LinearRegression
 from statsmodels.api import OLS
-from scipy import stats
+import numpy as np
+import matplotlib.pyplot as plt
+
 
 # GV_rate = the number of GV cases / the population of the region /1000)
 # the number of case per 1000 people
@@ -33,16 +33,21 @@ def linear(X, y):
     :param X: x variables
     :param y: y variable
     :return: linear regression model
+    >>> db = pd.read_csv("Variables.csv")# doctest:+ELLIPSIS
+    >>> pov = db["poverty"] / 100# doctest:+ELLIPSIS
+    >>> un = db["unemployment"] / 100# doctest:+ELLIPSIS
+    >>> edu = db["High school or higher"] / 100# doctest:+ELLIPSIS
+    >>> xv1 = pd.DataFrame([edu, pov, un]).T# doctest:+ELLIPSIS
+    >>> yv = pd.DataFrame(np.log10(db["rate"]))# doctest:+ELLIPSIS
+    >>> linear(xv1, yv) # doctest:+ELLIPSIS
+                                     OLS Regression Result...
+    <statsmodels.regression.linear_model.RegressionResultsWrapper object at ...>
 
     """
-    lr = LinearRegression()
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
-    model = lr.fit(X_train, y_train)
+
     ols = OLS(y,X).fit()
     print(ols.summary())
-    score = model.score(X_test, y_test)
-    print(model, score)
-    return model
+    return ols
 
 def plot_correlation(x):
     """
@@ -80,6 +85,7 @@ def plot_correlation(x):
     return corr
 
 
+
 if __name__ == '__main__':
     # Multi Linear Regression
     db = pd.read_csv("Variables.csv")
@@ -96,7 +102,7 @@ if __name__ == '__main__':
     model2 = linear(xv2, yv)
     dba = xv3.merge(yv, left_index=True, right_index=True)
     # Plot correlation metrix and pairwise metrix
-    print(plot_correlation(dba))
+    plot_correlation(dba)
     sns.pairplot(dba)
 
     # Further Analysis
@@ -120,9 +126,12 @@ if __name__ == '__main__':
     age = db["age"].astype("float64") / 100
     sex = db["sex"].astype("float64") / 100
     xv = pd.DataFrame([edu2, pov, un, sex, age]).T
-    yv = pd.DataFrame(db["level"])
+    yv = pd.DataFrame(np.log10(db["rate"]))
+    model3 = linear(xv, yv)
 
     dba2 = xv.merge(yv, right_index=True, left_index=True)
     plot_correlation(dba2)
+    sns.pairplot(dba2)
+
 
 
