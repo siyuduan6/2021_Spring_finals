@@ -15,10 +15,10 @@ Siyu Duan - siyud6@illinois.edu</br>
 Baisheng Qiu - bqiu42@illinois.edu
 
 ## Datasets used for Analysis
-Gun violence Data - https://github.com/jamesqo/gun-violence-data /n
-Education Attainment - https://data.census.gov/cedsci/table?t=Educational%20Attainment&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1501 /n
-Unemployment - https://data.census.gov/cedsci/table?t=Employment%20and%20Labor%20Force%20Status&g=0100000US.050000&y=2017&tid=ACSST1Y2017.S2301 /n
-Poverty - https://data.census.gov/cedsci/table?t=Income%20and%20Poverty&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1701 /n
+Gun violence Data - https://github.com/jamesqo/gun-violence-data \n
+Education Attainment - https://data.census.gov/cedsci/table?t=Educational%20Attainment&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1501 \n
+Unemployment - https://data.census.gov/cedsci/table?t=Employment%20and%20Labor%20Force%20Status&g=0100000US.050000&y=2017&tid=ACSST1Y2017.S2301 \n
+Poverty - https://data.census.gov/cedsci/table?t=Income%20and%20Poverty&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1701 \n
 
 ## Hypothesis
 Hypothesis 1: There is a positive correlation between the number of gun cases and unemployment rate. 
