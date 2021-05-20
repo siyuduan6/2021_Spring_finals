@@ -225,6 +225,6 @@ if __name__ == '__main__':
         draw_relation(db3, "level", column)
 
     # export db4
-    db3.to_csv("Variables_for_analysis.csv")
+    db3.to_csv("Variables.csv")
 
 
