@@ -183,7 +183,7 @@ We constructed correlation metrix and pairwise metrix to display the correlation
 
 ## Hypothesis Test
 
-### Hypothsis 1
+### Hypothesis 1
 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/unem_bar.png">
@@ -191,7 +191,7 @@ We constructed correlation metrix and pairwise metrix to display the correlation
 
 As we can observe, as the zip code area has a higher unemployment rate, the rate of gun violence increases. By calculating the correlation coefficient of unemployment rate and GV level, which is 0.292, we can accept hypothesis 1, even though the relationship is not strong.
 
-### Hypothsis 2
+### Hypothesis 2
 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Poverty_bar.png">
@@ -199,7 +199,7 @@ As we can observe, as the zip code area has a higher unemployment rate, the rate
 
 As we can observe, as the zip code area has a higher poverty rate, the rate of gun violence increases. By calculating the correlation coefficient of poverty rate and GV level, which is 0.442, we can accept hypothesis 2.
 
-### Hypothsis 3
+### Hypothesis 3
 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/bache_bar.png">
@@ -213,52 +213,6 @@ We also used variables to build a linear regression model. The summary of multi-
 
 <p align="center">
   <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/LR.png">
-</p> 
-
-## Predictive Analysis
-
-### Predictive Models
-
-We also applied logistic regression, Ridge, and other classifier models to do some predictions based on the level of gun violence. 
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Predictive.png">
-</p> 
-
-### Model Training and Result of Prediction
-
-Firsty, we tried linear regression (baseline) and its penalty model and calculated the accuracy score. But the results (accuracy is only about 0.3) show they are not suitable for prediction.
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/LR%20pre.png">
-</p> 
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Ridge.png">
-</p> 
-
-Then we tried other classification methods and introduced sex ratio (The percentage of male in the population 16 years old or over) and age ratio (the percentage of the population 16 years old or over) into models.
-
-But so far the accuracy score can only reach 0.46 at most. Due to the scores, these models we tried are not good enough to help us predict the gun violence level in specific regions. In further analysis, we will continue to experiment and optimize our model. We picked five kinds of models with relatively high performance below (SVC, Decision Tree, Random Forest. KNN, Bayes).
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/SVC.png">
-</p> 
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/DF.png">
-</p> 
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/RF.png">
-</p> 
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/KNN.png">
-</p> 
-
-<p align="center">
-  <img src="https://github.com/siyuduan6/2021_Spring_finals/blob/main/Graphs/Bayes.png">
 </p> 
 
 ## Further Analysis
