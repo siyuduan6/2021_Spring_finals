@@ -2,24 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split, cross_val_score
 from statsmodels.api import OLS
 from scipy import stats
-from sklearn.linear_model import Ridge
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.gaussian_process.kernels import RBF
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
-from sklearn.metrics import classification_report
-
 
 # GV_rate = the number of GV cases / the population of the region /1000)
 # the number of case per 1000 people
@@ -96,59 +80,6 @@ def plot_correlation(x):
     return corr
 
 
-def penalty(X, y):
-    """
-    Ridge model
-    :param X: x variables
-    :param y: y variables
-    :return: Ridge model
-
-    """
-    lr = Ridge(alpha=0.15)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
-    model = lr.fit(X_train, y_train)
-    score = model.score(X_test, y_test)
-    print(model, score)
-    scores = cross_val_score(lr, X=X, y=y, cv=5)
-    print(scores)
-    return model
-
-def classifiers(X, y):
-    """
-    Try different classification models and output the report of prediction
-    :param X: x variables
-    :param y: y variables
-    :return: accuracy score
-    """
-    #names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
-    #         "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
-    #         "Naive Bayes", "QDA"]
-    classifiers = [
-        KNeighborsClassifier(25),
-        SVC(kernel="linear", C=0.025),
-        SVC(gamma=2, C=1),
-        GaussianProcessClassifier(1.0 * RBF(1.0)),
-        DecisionTreeClassifier(max_depth=5),
-        RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
-        MLPClassifier(alpha=1, max_iter=1000),
-        AdaBoostClassifier(),
-        GaussianNB(),
-        QuadraticDiscriminantAnalysis()]
-    np.random.seed(31415)
-    i = 0
-    while i < len(classifiers):
-        model2 = classifiers[i]
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
-        model3 = model2.fit(X_train, y_train)
-        y_pred = model3.predict(X_test)
-        score = model3.score(X_test, y_test)
-        print(model3, score)
-        score1 = cross_val_score(model2, X=X, y=y, cv=10)
-        scores = classification_report(y_test,y_pred,digits=3)
-        print(scores)
-        i += 1
-        return score, score1
-
 if __name__ == '__main__':
     # Multi Linear Regression
     db = pd.read_csv("Variables.csv")
@@ -191,7 +122,6 @@ if __name__ == '__main__':
     xv = pd.DataFrame([edu2, pov, un, sex, age]).T
     yv = pd.DataFrame(db["level"])
 
-    classifiers(xv, yv)
     dba2 = xv.merge(yv, right_index=True, left_index=True)
     plot_correlation(dba2)
 
