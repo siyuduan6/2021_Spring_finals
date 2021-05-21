@@ -7,7 +7,10 @@ from aiohttp_requests import requests
 async def main():
     """
     Get zip code from google API
-    :return:
+    :return: a file contains addresses of cases with zip codes 
+
+    >>> main() # doctest: +ELLIPSIS
+    <coroutine object main at ...
     """
     # If laptop crashes or crawling is paused by accident, paste the output to "attempt.csv" file
     # and use codes below to restart.
@@ -45,9 +48,6 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
-
-
-
 
 
 
