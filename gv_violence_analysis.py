@@ -369,27 +369,6 @@ def mad_method(df, variable_name):
             continue
     return outlier
 
-
-def head(db, i, x):
-    """
-    Extract the top x sorted samples
-    :param db: the dataframe for analysis
-    :param i: the subset to sort the dataset
-    :param x:the xth highest number
-    :return: the sorted dataset
-    >>> file3 = pd.DataFrame({"a": [35004,35005,35006, 205,446,888, 35006], "b":[5, 2.5,8,6, 5,10,8]})
-    >>> print(head(file3, "a", 5))
-           a     b
-    2  35006   8.0
-    6  35006   8.0
-    1  35005   2.5
-    0  35004   5.0
-    5    888  10.0
-    """
-    sort = db.sort_values(i, ascending=False).head(x)
-    return sort
-
-
 def draw_relation(db, v, i):
     """
     Sort the dataframe by a specific variable and draw the relationship between two variables as a barplot
