@@ -15,7 +15,9 @@ Siyu Duan - siyud6@illinois.edu</br>
 Baisheng Qiu - bqiu42@illinois.edu
 
 ## Datasets used for Analysis
-We have two python files: zip_code_crawler.py is only to display how we get zip codes by request API, and the output can be viewed in the file "zip_code_crawler1.csv";
+We have two python files: 
+
+zip_code_crawler.py is only to display how we get zip codes by request API, and the output can be viewed in the file "zip_code_crawler1.csv";
 
 gv_violence_analysis.py is tp show how we did the analysis and visualized our data. 
 
