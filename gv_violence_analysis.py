@@ -269,7 +269,7 @@ def count_status(column):
 def dataclean(file):
     """
     Clean the missing and unusual zipcodes
-    :param data_2017: Dataset with zip codes and relative addresses
+    :param data_2017: dataset with zip codes and relative addresses
     :return: cleaned DataFrame
     """
     data_2017 = pd.read_csv(file)
