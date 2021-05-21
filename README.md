@@ -15,8 +15,13 @@ Siyu Duan - siyud6@illinois.edu</br>
 Baisheng Qiu - bqiu42@illinois.edu
 
 ## Datasets used for Analysis
+We have two python files: zip_code_crawler.py is only to display how we get zip codes by request API, and the output can be viewed in the file "zip_code_crawler1.csv";
+
+gv_violence_analysis.py is tp show how we did the analysis and visualized our data. 
+
 All the datasets we used could be downloaded here- https://drive.google.com/drive/folders/1fT9W7jdMuOJouXkO0_3aHLns31UShLUb?usp=sharing
 
+### Sources：
 Gun violence Data - https://github.com/jamesqo/gun-violence-data 
 
 Education Attainment - https://data.census.gov/cedsci/table?t=Educational%20Attainment&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1501 
@@ -26,9 +31,6 @@ Unemployment - https://data.census.gov/cedsci/table?t=Employment%20and%20Labor%2
 Poverty - https://data.census.gov/cedsci/table?t=Income%20and%20Poverty&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1701 
 
 Population & Sex & Age - https://data.census.gov/cedsci/table?t=Populations%20and%20People&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S0101 
-
-We have two python files: zip_code_crawler.py is only to display how we get zip codes by request API, and the output can be viewed in the file "zip_code_crawler1.csv";
-gv_violence_analysis.py is tp show how we did the analysis and visualized our data. 
 
 ## Hypothesis
 Hypothesis 1: There is a positive correlation between the number of gun cases and unemployment rate. 
