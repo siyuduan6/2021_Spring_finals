@@ -4,7 +4,7 @@ import pandas as pd
 import json
 from aiohttp_requests import requests
 """
-This python file is to display how we get the relative zip code for each address.
+This python file is only to display how we get the relative zip code for each address.
 The output can be found in zip_code_crawler1.csv file.
 """
 
