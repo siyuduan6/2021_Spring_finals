@@ -25,6 +25,8 @@ Unemployment - https://data.census.gov/cedsci/table?t=Employment%20and%20Labor%2
 
 Poverty - https://data.census.gov/cedsci/table?t=Income%20and%20Poverty&g=0100000US.860000&y=2017&tid=ACSST5Y2017.S1701 
 
+Zip Code 
+
 ## Hypothesis
 Hypothesis 1: There is a positive correlation between the number of gun cases and unemployment rate. 
 
