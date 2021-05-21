@@ -27,7 +27,7 @@ async def main():
     gv_il.loc[:, "zip"] = 0
     gv_il.loc[:a, "zip"] = exist["zip"]"""
     # Firstly, import the file which contains addresses of gun violence cases
-    gv = pd.read_csv("zip_code_crawler1.csv", header=0, low_memory=False)
+    gv = pd.read_csv("zip_code_crawler.csv", header=0, low_memory=False)
     # Add a new column for full addresses
     gv["Full_Address"] = gv["address"] + gv["city_or_county"] + gv["state"]
     address = gv["Full_Address"]
